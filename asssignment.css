@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+body > h1{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.items{
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    background-color: rgb(211, 48, 116);
+    color: white;
+    padding: 8px;
+    margin: 8px;
+    border: 2px solid black;
+}
+.itemheadings{
+    position: absolute;
+    top: -23px;
+    right: -2px;
+    padding: 4px;
+    text-align: center;
+    background-color: bisque;
+    color: black;
+    border: 2px solid black;
+}
+.items > p{
+    margin-top: 55px;
+}
+
+@media screen and (max-width:991px ) {
+    .items{
+        width: 47%;
+    }
+    .items:nth-child(4){
+        width: 97%;
+    }
+    
+}
+@media screen and (max-width:767px ) {
+    .items{
+        width: 97%;
+    }
+}
